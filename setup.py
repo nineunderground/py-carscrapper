@@ -10,6 +10,7 @@ setup(
     author_email='',
     install_requires=[
           'beautifulsoup4',
+            'requests',
       ],
     description=''
 )
