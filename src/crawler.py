@@ -3,7 +3,6 @@
 import requests
 from bs4 import BeautifulSoup
 import time
-import random
 import sys
 
 # print 'Number of arguments:', len(sys.argv), 'arguments.'
@@ -89,10 +88,10 @@ for url_page in range(1, 2):
         totalCarsScrapped += 1
         #print ""
 
-    # Random time 2secs - 3secs
-    sleeping_time = random.randint(2, 3)
+    # Random time 5secs
+    sleeping_time = 5
     #print repr("Stopping thread " + repr(sleeping_time) + " secs")
-    time.sleep(sleeping_time)  # delays for 3 seconds
+    time.sleep(sleeping_time)  # delays for 5 seconds
     #print repr("Resuming thread")
 
 print repr("Total cars scrapped ") + repr(totalCarsScrapped)
